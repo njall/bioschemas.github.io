@@ -29,7 +29,7 @@ title: BioSchemas Specifications
             </tr>
             </thead>
             <tbody>
-            {% assign type_specs = site.bsc_specs | where: 'spec_type', 'Profile'%}
+            {% assign type_specs = site.stag_specs | where: 'spec_type', 'Profile'%}
             {% for spec in type_specs %}
             <tr>
                 <th>{{spec.name}}</th>
@@ -95,7 +95,7 @@ title: BioSchemas Specifications
             </tr>
             </thead>
             <tbody>
-            {% assign prof_specs = site.bsc_specs | where: 'spec_type', 'Type'%}
+            {% assign prof_specs = site.stag_specs | where: 'spec_type', 'Type'%}
             {% for spec in  prof_specs%}
             <tr>
                 <th>{{spec.name}}</th>

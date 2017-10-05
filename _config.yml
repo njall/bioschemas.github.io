@@ -25,7 +25,7 @@ gems:
 
 # Collections
 collections:
-  bsc_specs:
+  stag_specs:
     output: true
     permalink: /:collection/:path/
   specifications:
