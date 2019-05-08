@@ -27,7 +27,7 @@ spec_info:
     - whereas a course instance is about the specific times and location of when that
     course is held. '
   version: 0.5-draft
-  version_date: 20190508T131512
+  version_date: 20190508T144715
   official_type: ""
   full_example: ""
 mapping:
@@ -73,7 +73,7 @@ mapping:
   marginality: Optional
   cardinality: MANY
   controlled_vocab: ""
-  example: 'alternateName: ["Comp-sci 101"]'
+  example: '"alternateName": ["Comp-sci 101"]'
 - property: audience
   expected_types:
   - Audience
@@ -254,7 +254,7 @@ mapping:
   marginality: Optional
   cardinality: MANY
   controlled_vocab: ""
-  example: "hasPart: [{\n  \"@type\": \"TrainingMaterial\",\n\n  //Minimum\n  \"name\":
+  example: "\"hasPart\": [{\n  \"@type\": \"TrainingMaterial\",\n\n  //Minimum\n  \"name\":
     \"Course Slides for CS101\",\n  \"description\": \"The course slides contain diagrams,
     questions, and links to various resources about this course\",\n  \"keywords\":
     \"Computer Science, CS, Introductory\",\n\n  //Recommended\n  \"timeRequired\":
@@ -306,7 +306,7 @@ mapping:
   cardinality: MANY
   controlled_vocab: ""
   example: |-
-    mentions: [{
+    "mentions": [{
       "@type": "Tool",
       "name": "Galaxy",
       "url": "https://bio.tools/galaxy",

@@ -8,7 +8,7 @@ status: revision
 spec_type: Profile
 group: training
 use_cases_url: ''
-cross_walk_url: ''
+cross_walk_url: 'https://docs.google.com/spreadsheets/d/1Shba9Nv9z-CeHpRtvj_eX1ZZQ5kpqvrUmXHKMzD2Uws/edit#gid=1261485211'
 gh_tasks: https://github.com/BioSchemas/bioschemas/labels/type%3A%20CourseInstance
 live_deploy: ''
 
@@ -17,6 +17,7 @@ hierarchy:
 - Thing
 - Event
 - CourseInstance
+
 spec_info:
   title: CourseInstance
   subtitle: 'Specification describing the instance of a course. '
@@ -25,7 +26,7 @@ spec_info:
     a course instance is about the specific times and location of when that course
     is held. '
   version: 0.5-draft
-  version_date: 20190225T153504
+  version_date: 20190508T160604
   official_type: ""
   full_example: ""
 mapping:
@@ -227,7 +228,7 @@ mapping:
   cardinality: MANY
   controlled_vocab: ""
   example: |-
-    mentions: [{
+    "mentions": [{
       "@type": "Tool",
       "name": "Galaxy",
       "url": "https://bio.tools/galaxy",
@@ -342,7 +343,7 @@ mapping:
   expected_types:
   - Event
   description: |-
-    An Event that is part of this event. For example, a conference event includes many presentations, each of which is a subEvent of the conference. Supersedes subEvents.
+    An Event that is part of this event. For example, a conference event includes many presentations, each of which is a subEvent of theconference. Supersedes subEvents.
     Inverse property: superEvent.
   type: ""
   type_url: ""
@@ -403,8 +404,8 @@ mapping:
   marginality: Optional
   cardinality: MANY
   controlled_vocab: ""
-  example: "workFeatured: [{\n  \"@type\": \"TrainingMaterial\",\n  \"name\": \"Course
-    Slides for Autumn 2020 offering of CS101\",\n  \"url\": \"http://example.com/slides_website\"\n
+  example: "\"workFeatured\": [{\n  \"@type\": \"TrainingMaterial\",\n  \"name\":
+    \"Course Slides for Autumn 2020 offering of CS101\",\n  \"url\": \"http://example.com/slides_website\"\n
     \ \"description\": \"The course slides contain diagrams, questions, and links
     to various resources about this course\" \n  \"keywords\": \"Computer Science,
     CS, Introductory\"\n}]"
